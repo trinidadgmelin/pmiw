@@ -2,7 +2,7 @@ let imgAutos = [];
 let imgGato = [];
 let fondo, portada;
 let objJuego;
-let gato, gano;
+let gato, gatoGano;
 
 function preload() {
   gato = loadSound('data/gato.mp3');
@@ -53,3 +53,4 @@ function mouseClicked() {
 
   }
 }
+
