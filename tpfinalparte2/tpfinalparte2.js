@@ -1,3 +1,5 @@
+//https://youtu.be/y5jicayNNxA?si=sg0wtCz5-yG0RLtg
+
 let imgAutos = [];
 let imgGato = [];
 let fondo, portada;
@@ -53,4 +55,5 @@ function mouseClicked() {
 
   }
 }
+
 
