@@ -1,5 +1,3 @@
-//https://youtu.be/y5jicayNNxA?si=sg0wtCz5-yG0RLtg
-
 let imgAutos = [];
 let imgGato = [];
 let fondo, portada;
@@ -36,24 +34,9 @@ function draw() {
     objJuego.actualizar();
   }
   objJuego.colision();
- 
+
 }
 
 function mouseClicked() {
-  
-    if (objJuego.estado === "inicio" && objJuego.sobreMouse(500, 400, 125, 60)) {
-  objJuego.estado="tutorial";
+    objJuego.reiniciar();
   }
-
-  if ((objJuego.estado === "ganaste" || objJuego.estado === "perdiste") &&
-      objJuego.sobreMouse(500, 400, 125, 60)) {
-  frameCount=150;
-  objJuego.estaVivo= true;
-  objJuego.estado="jugando";
-  objJuego.crearGato();
-  objJuego.crearAutos();
-
-  }
-}
-
-

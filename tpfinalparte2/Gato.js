@@ -44,14 +44,30 @@ class Gato {
       }
 
       else {
+        this.gatoQuieto();
+      }
+      }
+
+
+      limiteAncho() {
+        if (this.x < -this.anchoGato/2) {
+          this.x = this.anchoGato;
+          keyCode= 0;
+        }
+
+        if (this.x > width - this.anchoGato/2) {
+          this.x = width - this.anchoGato;
+          keyCode= 0;
+        }
+      }
+
+      gatoQuieto() {
         this.estaQuieto = true;
         this.esquivar=false;
         this.imagen= 0;
         this.y=225;
         this.anchoGato = 40;
         this.altoGato= 60;
-
-      }
       }
 
     atropellado(obstaculo) {

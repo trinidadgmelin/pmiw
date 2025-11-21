@@ -34,6 +34,7 @@ class Juego {
         this.fondo.dibujar();
         this.gato.mover();
         this.gato.dibujar();
+        this.gato.limiteAncho();
         for (let i=0; i<4; i++) {
         this.autos[i].dibujar(0, 150);
         this.autos[i].moverIzquierda();
@@ -44,6 +45,7 @@ class Juego {
         this.fondo.dibujar();
         this.gato.mover();
         this.gato.dibujar();
+        this.gato.limiteAncho();
         for (let i=0; i<4; i++) {
         this.autos[i].dibujar(1, 150);
         this.autos[i].moverIzquierda();
@@ -54,6 +56,7 @@ class Juego {
         this.fondo.dibujar();
         this.gato.mover();
         this.gato.dibujar();
+        this.gato.limiteAncho();
         for (let i=0; i<4; i++) {
         this.autos[i].dibujar(2, 150);
         this.autos[i].moverIzquierda();
@@ -64,6 +67,7 @@ class Juego {
         this.fondo.dibujar();
         this.gato.mover();
         this.gato.dibujar();
+        this.gato.limiteAncho();
         for (let i=0; i<4; i++) {
         this.autos[i].dibujar(3, 150);
         this.autos[i].moverIzquierda();
@@ -136,6 +140,23 @@ colision() {
     return mouseX>posX && mouseX<posX+tamX && mouseY>posY && mouseY<posY+tamY;
   }
 
+  reiniciar() {
+  
+    if (this.estado === "inicio" && this.sobreMouse(500, 400, 125, 60)) {
+  this.estado="tutorial";
+  }
+
+  if ((this.estado === "ganaste" || this.estado === "perdiste") &&
+      this.sobreMouse(500, 400, 125, 60)) {
+  frameCount=150;
+  this.estaVivo= true;
+  this.estado="jugando";
+  this.crearGato();
+  this.crearAutos();
+  this.gato.gatoQuieto();
+  keyCode= 0;
+    }
+  }
 }
 
 
