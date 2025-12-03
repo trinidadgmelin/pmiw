@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+body {
+    font-family: "League Spartan", sans-serif;
+    
+    background-color: #c8e0ed;
+}
+
+main {
+    margin: 50px;
+    max-width: 95%;
+    width: auto;
+}
+
+h1 {
+    color: #c8e0ed;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+.inicio {
+    background-color: #001855;
+    font-size: large;
+p {
+    color: #c8e0ed;
+}
+
+.btn {
+    background-color: #c8e0ed;
+    color: #260656;
+}
+
+}
+
+.btn {
+    background-color: #001855;
+    color: #c8e0ed;
+}
+
+h3 {
+    color: #001855;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.card {
+    background-color: #c8e0ed;
+    color: #001855;
+    border: 1px solid #001855;
+}
+
+.modal-content,
+.modal-header,
+.modal-body,
+.modal-footer {
+    background-color: #001855;
+    color: #c8e0ed;
+}
+
+.btn-close {
+    filter: invert(90%); 
+}
+
+
+.accordion-item {
+    background-color: #c8e0ed;
+    border: 1px solid #001855;
+}
+
+.accordion-button {
+    background-color: #c8e0ed;
+    color: #001855;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #c8e0ed;
+    color: #001855;
+}
+
+
+footer {
+    background-color: #001855;
+    padding: 20px;
+    
+p {
+    color: #c8e0ed;
+}
+
+}

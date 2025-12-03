@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>El gato a rayas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<section class="inicio">
+    <h1 class="text-center">EL PIJAMA DEL GATO</h1>
+    <p class="text-center">
+       Una aventura gráfica basada en un cuento de Ray Bradbury.
+    </p>
+
+    <br>
+
+    <!-- Button trigger modal -->
+<div class="text-center">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+    Jugar
+  </button>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModal2Label">Jugar</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" >
+        <div class="modal-body d-flex justify-content-center">
+          <iframe src="tpfinalparte1/index.html" frameborder="0" width="660"      height="500"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+</section>
+
+<br>
+<section>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 col-sm-12">
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">Temática</h5>
+            <p class="card-text">El cuento en el que nos basamos para la aventura gráfica.</p>
+            <a href="#tematica" class="btn btn-primary">Leer</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12">
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">Proceso</h5>
+            <p class="card-text">Nuestro proceso para crear la aventura gráfica.</p>
+            <a href="#proceso" class="btn btn-primary">Leer</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12">
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">Creadoras</h5>
+            <p class="card-text">Sobre nosotras.</p>
+            <a href="#creadoras" class="btn btn-primary">Leer</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<br>
+
+<section>
+  <h3 class="text-center" id="tematica">Temática</h3>
+  
+  <div class="col-12">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/ray.jpg" class="img-fluid rounded-start" alt="una imagen de Ray Bradbury" width="500">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Sobre el cuento</h5>
+              <p class="card-text">«El pijama del gato» (The Cat’s Pajamas) es el cuento que elegimos de Ray Bradbury para adaptarlo a una aventura gráfica. Sinópsis: en una carretera solitaria de California, un gatito negro aparece de pronto en la calzada y obliga a dos autos a frenar. De uno baja un joven; del otro, una muchacha. Ambos se inclinan a la vez para quedarse con el animal. La disputa los conduce a un café cercano, donde, entre silencios y confidencias, el azar de la carretera comienza a tornarse en la promesa de otra historia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<br>
+
+<section>
+
+  <h3 class="text-center" id="proceso">Proceso</h3>
+
+  <div class="row g-3">
+
+    <!-- Card 1 -->
+    <div class="col-4">
+      <div class="card mb-3 mx-auto" style="max-width: 540px;">
+        <img src="img/diagrama.png" class="card-img-top" alt="diagrama de la aventura gráfica">
+        <div class="card-body">
+          <h5 class="card-title">Diagrama</h5>
+          <p class="card-text">Empezamos armando el diagrama de flujo con todas las pantallas y los finales correspondientes, y asi saber como se conectaban las distintas decisiones del jugador.</p>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Ver diagrama completo
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Diagrama completo</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/diagrama.png" alt="imágen del diagrama" width="900" class="d-block mx-auto">
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-4">
+      <div class="card mb-3 mx-auto">
+        <img src="img/imgGemini.png" class="card-img-top" alt="imagen de la aventura gráfica">
+        <div class="card-body">
+          <h5 class="card-title">Las imágenes</h5>
+          <p class="card-text">Todo el arte visual fue generado con herramientas de IA (gemini) y posteriormente editado, manteniendo asi el mismo estilo.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-4">
+      <div class="card mb-3 mx-auto">
+        <img src="img/processing.png" class="card-img-top" alt="codigo de la aventura gráfica">
+        <div class="card-body">
+          <h5 class="card-title">Código</h5>
+          <p class="card-text">El desarrollo del juego fue realizado utilizando p5.js, la biblioteca de JavaScript mediante una maquina de estados.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<br>
+
+<section>
+<h3 class="text-center" id="creadoras">Creadoras</h3>
+
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Sobre nosotras
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Somos Uma brau y  Trinidad Gmelin, somos de la comision 1 y trabajamos juntas durante el desarrollo de la aventura grafica y del juego basado en el cuento anteriormente mencionado. Ambas somos estudiantes de Diseño Multimedial y pudimos trabajar de manera amena durante este cuatrimestre juntas.
+      </div>
+    </div>
+  </div>
+</section>
+
+<br>
+
+<footer class="text-center">
+  <p>Uma Brau (122618/7),  Gmelin Trinidad (122710/2) | Comisión 1 PMIW 2025</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
